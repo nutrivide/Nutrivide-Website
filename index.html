@@ -124,46 +124,40 @@
       <div class="container">
         <div class="row">
           <div class="col-md-12">
-            <h1 class="text-center text-primary" id="contact">contact us</h1>
+            <h1 class="text-center text-primary" id="contactus">contact us</h1>
             <div class="row">
-              <form class="form-horizontal" role="form" method="post" action="index.php">
-                <div class="form-group">
-                  <label for="name" class="col-sm-2 control-label">Name</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="First &amp; Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
-                    <!--?php echo "<p class='text-danger'-->$errName
-                    <p></p>";?&gt;</div>
-                </div>
-                <div class="form-group">
-                  <label for="email" class="col-sm-2 control-label">Email</label>
-                  <div class="col-sm-10">
-                    <input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
-                    <!--?php echo "<p class='text-danger'-->$errEmail
-                    <p></p>";?&gt;</div>
-                </div>
-                <div class="form-group">
-                  <label for="message" class="col-sm-2 control-label">Message</label>
-                  <div class="col-sm-10">
-                    <textarea class="form-control" rows="4" name="message">&lt;?php echo htmlspecialchars($_POST['message']);?&gt;</textarea>
-                    <!--?php
-                    echo "<p class='text-danger'-->$errMessage
-                    <p></p>";?&gt;</div>
-                </div>
-                <div class="form-group">
-                  <label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
-                  <div class="col-sm-10">
-                    <input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
-                    <!--?php echo "<p class='text-danger'-->$errHuman
-                    <p></p>";?&gt;</div>
-                </div>
-                <div class="form-group">
-                  <div class="col-sm-10 col-sm-offset-2">
-                    <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+              <form role="form" method="post" action="contact.php" id="contact-form">
+                <div class="messages"></div>
+                <div class="controls">
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                        <label for="form_name">name</label>
+                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your full name" required="required" data-error="Firstname is required.">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-                <div class="form-group">
-                  <div class="col-sm-10 col-sm-offset-2">
-                    <!--?php echo $result; ?-->
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="form_email">email</label>
+                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email address" required="required" data-error="Valid email is required.">
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="form-group">
+                        <label for="form_message">message</label>
+                        <textarea id="form_message" name="message" class="form-control" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                        <div class="help-block with-errors"></div>
+                      </div>
+                    </div>
+                    <div class="col-md-12">
+                      <input type="submit" class="btn btn-success btn-send" value="Send message">
+                    </div>
                   </div>
                 </div>
               </form>
