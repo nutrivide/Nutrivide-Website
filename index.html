@@ -1,0 +1,176 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="index.css" rel="stylesheet" type="text/css">
+  </head><body>
+    <div class="cover">
+      <div class="navbar">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img src="Logo2CurvyNGW.png" width="175" height="26"></a>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active">
+                <a href="index.html">home</a>
+              </li>
+              <li>
+                <a href="index.html#b1">who we are</a>
+              </li>
+              <li>
+                <a href="index.html#b2">the team</a>
+              </li>
+              <li>
+                <a href="index.html#b3">contact us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <img src="Logo2CurvyNG.png">
+            <p class="lead text-success">providing nutrient solutions through innovation</p>
+            <br>
+            <br>
+            <a class="btn btn-lg btn-primary" href="index.html#b1">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center text-primary" id="b1">who we are</h1>
+            <div class="col-md-6 col-md-offset-3">
+              <p class="text-center">A newborn’s future is limitless. The first three years of an infant’s
+                life present countless milestones; from learning to walk to speaking a
+                first word, these experiences build a foundation for long-term development.
+                However, many children across the globe are unable to tap into this potential,
+                and frequently do not live past these first few years. Many infants around
+                the world, especially the developing world, are hindered by a highly preventable
+                cause: malnutrition. To combat infant mortality, we present a simple, yet
+                effective solution that provides nutrients to malnourished infants using
+                innovative technologies.&nbsp;
+                <br>
+                <br>Our solution is an all-encompassing variation of the standard silicone
+                pacifier,&nbsp;modified to store and dispense micronutrients that are vital
+                for infant survival and development. The product’s design takes advantage
+                of the baby’s natural sucking reflex in order to administer vitamins and
+                minerals in a non-invasive manner. These minerals will be measured to accommodate
+                the baby’s needs for two months, simultaneously matching the typical lifespan
+                of a pacifier and providing customers with a safe and simple method to
+                facilitate healthy growth and development.&nbsp;</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center text-primary" id="b2">the team</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="..\DSC_0059.JPG" class="center-block img-circle img-responsive">
+            <h3 class="text-center">Akshay Kamath</h3>
+            <p class="text-center">chief executive officer</p>
+          </div>
+          <div class="col-md-4">
+            <img src="..\DSC_0079.JPG" class="center-block img-circle img-responsive">
+            <h3 class="text-center">Ethan Murad</h3>
+            <p class="text-center">chief financial officer</p>
+          </div>
+          <div class="col-md-4">
+            <img src="..\DSC_0078.JPG" class="center-block img-circle img-responsive">
+            <h3 class="text-center">Farhat Alam</h3>
+            <p class="text-center">chief operating officer</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <img src="..\DSC_0091 (1).JPG" class="center-block img-circle img-responsive">
+            <h3 class="text-center">Joseph Bajor</h3>
+            <p class="text-center">chief technology officer</p>
+          </div>
+          <div class="col-md-4">
+            <img src="..\DSC_0097.JPG" class="center-block img-circle img-responsive">
+            <h3 class="text-center">Karthik Paka</h3>
+            <p class="text-center">chief design officer</p>
+          </div>
+          <div class="col-md-4">
+            <img src="..\DSC_0056.JPG" class="center-block img-circle img-responsive">
+            <h3 class="text-center">Simon Bird</h3>
+            <p class="text-center">chief medical officer</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1 class="text-center text-primary" id="b3">contact us</h1>
+            <div class="row">
+              <form class="form-horizontal" role="form" method="post" action="index.php">
+	<div class="form-group">
+		<label for="name" class="col-sm-2 control-label">Name</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="name" name="name" placeholder="First &amp; Last Name" value="<?php echo htmlspecialchars($_POST['name']); ?>">
+			<!--?php echo "<p class='text-danger'-->$errName<p></p>";?&gt;
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="email" class="col-sm-2 control-label">Email</label>
+		<div class="col-sm-10">
+			<input type="email" class="form-control" id="email" name="email" placeholder="example@domain.com" value="<?php echo htmlspecialchars($_POST['email']); ?>">
+			<!--?php echo "<p class='text-danger'-->$errEmail<p></p>";?&gt;
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="message" class="col-sm-2 control-label">Message</label>
+		<div class="col-sm-10">
+			<textarea class="form-control" rows="4" name="message">&lt;?php echo htmlspecialchars($_POST['message']);?&gt;</textarea>
+			<!--?php echo "<p class='text-danger'-->$errMessage<p></p>";?&gt;
+		</div>
+	</div>
+	<div class="form-group">
+		<label for="human" class="col-sm-2 control-label">2 + 3 = ?</label>
+		<div class="col-sm-10">
+			<input type="text" class="form-control" id="human" name="human" placeholder="Your Answer">
+			<!--?php echo "<p class='text-danger'-->$errHuman<p></p>";?&gt;
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
+		</div>
+	</div>
+	<div class="form-group">
+		<div class="col-sm-10 col-sm-offset-2">
+			<!--?php echo $result; ?-->	
+		</div>
+	</div>
+</form> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+
+</body></html>
