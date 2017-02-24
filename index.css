@@ -1,4 +1,4 @@
-@import url('http://fonts.googleapis.com/css?family=Josefin+Slab:400,700');
+@import url('Delicious-Roman.otf');
 /*!
  * Default theme for Pingendo 
  * Homepage: http://pingendo.com  
@@ -1086,7 +1086,7 @@ html {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 body {
-  font-family: Josefin Slab;
+  font-family: Delicious;
   font-size: 18px;
   line-height: 1.42857143;
   color: #000000;
@@ -1188,7 +1188,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: Josefin Slab;
+  font-family: Delicious;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -5825,7 +5825,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Josefin Slab;
+  font-family: Delicious;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.4;
@@ -5932,7 +5932,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: Josefin Slab;
+  font-family: Delicious;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.42857143;
