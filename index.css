@@ -117,7 +117,7 @@ samp {
   font-size: 1em;
 }
 button,
-input,
+helvinput,
 optgroup,
 select,
 textarea {
@@ -1188,7 +1188,7 @@ h6,
 .h4,
 .h5,
 .h6 {
-  font-family: Helvetica;
+  font-family: Josefin Slab;
   font-weight: 500;
   line-height: 1.1;
   color: inherit;
@@ -5825,7 +5825,7 @@ button.close {
   position: absolute;
   z-index: 1070;
   display: block;
-  font-family: Helvetica;
+  font-family: Josefin Slab;
   font-size: 16px;
   font-weight: normal;
   line-height: 1.4;
@@ -5932,7 +5932,7 @@ button.close {
   display: none;
   max-width: 276px;
   padding: 1px;
-  font-family: Helvetica;
+  font-family: Josefin Slab;
   font-size: 18px;
   font-weight: normal;
   line-height: 1.42857143;
