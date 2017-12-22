@@ -1346,6 +1346,7 @@ mark,
 }
 .text-primary {
   color: #337cbb;
+  font-weight: bold;
 }
 a.text-primary:hover {
   color: #286193;
