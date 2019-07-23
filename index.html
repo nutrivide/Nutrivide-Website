@@ -26,8 +26,8 @@
                 <div class="navbar-nav">
                     <a class="nav-item nav-link" href="#home">Home</a>
                     <a class="nav-item nav-link" href="#aboutus">About Us</a>
-                    <a class="nav-item nav-link" href="#nutrifier">The Nutrifier</a>
                     <a class="nav-item nav-link" href="#achievements">Achievements</a>
+                    <a class="nav-item nav-link" href="#nutrifier">The Nutrifier</a>
                     <a class="nav-item nav-link" href="#theteam">The Team</a>
                 </div>
             </div>
@@ -64,20 +64,7 @@
         </div>
     </div>
 
-    <div class="section bg-primary pt-3 pb-3" id="nutrifier">
-        <h2 class="page-section-title text-primary display-4 pt-4 text-center">The Nutrifier</h2>
-        <div class="row">
-            <div class="col">
-                <p class="text-info mx-md-5 ">Our solution is an all-encompassing variation of the standard silicone pacifier, modified to store and dispense micronutrients that are vital for infant survival and development. The product’s design takes advantage of the baby’s natural sucking reflex in order to administer vitamins and minerals in a non-invasive manner. These minerals will be measured to accommodate the baby’s needs, providing customers with a safe and simple method to facilitate healthy growth and development. </p>
-            </div>
-            <div class="col">
-
-                <img class="img-fluid" src="Images/nutrifier.gif">
-            </div>
-        </div>
-    </div>
-
-    <div class="section bg-light pt-3 pb-3" id="achievements">
+    <div class="section bg-primary pt-3 pb-3" id="achievements">
 
         <div class="container">
             <h2 class="text-center text-primary pb-3 display-4 pt-4 text-center">Achievements</h2>
@@ -107,6 +94,19 @@
             </div>
         </div>
 
+    </div>
+
+    <div class="section bg-light pt-3 pb-3" id="nutrifier">
+        <h2 class="page-section-title text-primary display-4 pt-4 text-center">The Nutrifier</h2>
+        <div class="row">
+            <div class="col">
+                <p class="text-info mx-md-5 ">Our solution is an all-encompassing variation of the standard silicone pacifier, modified to store and dispense micronutrients that are vital for infant survival and development. The product’s design takes advantage of the baby’s natural sucking reflex in order to administer vitamins and minerals in a non-invasive manner. These minerals will be measured to accommodate the baby’s needs, providing customers with a safe and simple method to facilitate healthy growth and development. </p>
+            </div>
+            <div class="col">
+
+                <img class="img-fluid" src="Images/nutrifier.gif">
+            </div>
+        </div>
     </div>
 
 
@@ -152,51 +152,85 @@
 
 
     <div class="section bg-light pt-3 pb-3 ">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12">
-                    <h1 class="text-center text-primary display-4 pt-4" id="contactus">Contact Us</h1>
+        <div class="container align-center">
+            <h1 class="text-center text-primary display-4 pt-4" id="contactus">Contact Us</h1>
+            <form method="POST" action="http://formspree.io/team@nutrivide.org">
+
+                <div class="messages"></div>
+
+                <div class="controls">
+
                     <div class="row">
-                        <form method="POST" action="http://formspree.io/team@nutrivide.org">
-                            <div class="messages"></div>
-                            <div class="controls">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="form_name">name</label>
-                                            <input id="form_name" type="text" name="Name" class="form-control" placeholder="Please enter your full name" required="required" data-error="Firstname is required.">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="form_email">email</label>
-                                            <input id="form_email" type="email" name="Email" class="form-control" placeholder="Please enter your email address" required="required" data-error="Valid email is required.">
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="form-group">
-                                            <label for="form_message">message</label>
-                                            <textarea id="form_message" name="Message" class="form-control" rows="4" required="required" data-error="Please,leave us a message."></textarea>
-                                            <div class="help-block with-errors"></div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12">
-                                        <input type="submit" class="btn btn-success btn-send" value="Send Message">
-                                    </div>
-                                </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_name">Firstname *</label>
+                                <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                <div class="help-block with-errors"></div>
                             </div>
-                        </form>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_lastname">Lastname *</label>
+                                <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_email">Email *</label>
+                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="form_need">Subject *</label>
+                                <select id="form_need" name="need" class="form-control" required="required" data-error="Please specify your need.">
+                                    <option value=""></option>
+                                    <option value="Request quotation">Sponsor</option>
+                                    <option value="Request order status">Suggestion</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label for="form_message">Message *</label>
+                                <textarea id="form_message" name="message" class="form-control" placeholder="Message for us *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="text-muted">
+                                <strong>*</strong> These fields are required.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
+
+            </form>
         </div>
     </div>
+    
+    
+    <footer class="bg-primary">
+		<div class="container text-center text-primary">
+			<div class="row">
+				<div class="col-md-12 col-lg-12">
+					<p>Copyright &copy; 2019 Nutrivide</p>
+				</div>
+			</div>	
+		</div>
+	</footer>
 
     <article id="modal1" class="modal fade">
         <div class="modal-dialog modal-lg">
@@ -282,12 +316,13 @@
             </div>
         </div>
     </article>
-    <article id="modal5" class="modal fade">
-        <div class="modal-dialog modal-lg">
+    <article id="modal5" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg" role="document">
             <div class="modal-content">
                 <div class="modal-body">
+
                     <div class="embed-responsive embed-responsive-16by9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowscriptaccess="always" allow="autoplay"></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/Pi1PsfyTQa0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -313,6 +348,4 @@
 
 
 
-</body>
-
-</html>
+</body></html>
