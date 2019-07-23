@@ -523,6 +523,12 @@ mark,
     height: auto;
 }
 
+.img-text {
+    float: right;
+    overflow: auto;
+    clear: right;
+}
+
 .photo-modal:hover {
     transform: scale(1.05) translateY(-3px);
 }
