@@ -557,6 +557,9 @@ mark,
 .figure-img {
     margin-bottom: 0.5rem;
     line-height: 1;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .figure-caption {
