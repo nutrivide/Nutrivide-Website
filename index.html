@@ -6,7 +6,7 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/bootstrap-social.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
     <script src="js/jquery.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
@@ -17,7 +17,7 @@
 </head>
 
 <body data-spy="scroll" data-target=".site-nav" data-offset="55">
-    <div id="page-hero">
+    <div class="bg-primary" id="page-hero">
         <nav class="site-nav navbar fixed-top navbar-light navbar-expand-sm bg-primary">
             <div class="container-fluid">
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav" aria-label="Toggle Navigation">
@@ -192,14 +192,14 @@
 
 
 
-    <div class="section bg-light pt-3 pb-3" id="contact">
-        <div class="container align-center">
+    <div class="section bg-light row" id="contact">
+        <div class="col container align-center pt-3 pb-3">
             <h1 class="text-center text-primary display-4 pt-4" id="contactus">Contact Us</h1>
             <form method="POST" action="http://formspree.io/team@nutrivide.org">
 
                 <div class="messages"></div>
 
-                <div class="controls">
+                <div class="controls pl-3">
 
                     <div class="row">
                         <div class="col-md-6">
@@ -259,6 +259,9 @@
                 </div>
 
             </form>
+        </div>
+        <div class="bg-primary col container align-center pt-3 pb-3">
+            <h1 class="lead text-success pt-4 display-5 text-center">Insert Quote Here</h1>
         </div>
     </div>
 
