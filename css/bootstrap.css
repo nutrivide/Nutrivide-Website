@@ -5,6 +5,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 :root {
+    
     --blue: #007bff;
     --indigo: #6610f2;
     --purple: #6f42c1;
@@ -52,7 +53,7 @@ span.anchor {
 html {
     font-family: sans-serif;
     line-height: 1.15;
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -71,7 +72,7 @@ section {
 
 footer {
     bottom: 0;
-    background: #e3f2fd;
+    background: var(--primary);
     height: 150;
     width: 100%;
     font-size: 1.25rem;
@@ -87,6 +88,7 @@ body {
     color: #212529;
     text-align: left;
     position: relative;
+    padding-top: 0;
 }
 
 [tabindex="-1"]:focus {
@@ -4592,7 +4594,12 @@ input[type="button"].btn-block {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding: 0.5rem 1rem;
+    background: var(--primary);
     opacity: 0.8;
+}
+
+.inbody{
+    
 }
 
 .navbar > .container,
@@ -5580,10 +5587,6 @@ a.badge-dark:focus,
 a.badge-dark.focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem rgba(52, 58, 64, 0.5);
-}
-
-.site-nav.inbody {
-    background: var(--secondary);
 }
 
 .jumbotron {
@@ -7582,7 +7585,7 @@ body {
 }
 
 .bg-primary {
-    background-color: #e3f2fd !important;
+    background-color: var(--primary); !important;
 }
 
 a.bg-primary:hover,
