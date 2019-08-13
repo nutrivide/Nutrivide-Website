@@ -22,11 +22,15 @@ jQuery(document).ready(function($){
     $(window).on('activate.bs.scrollspy', function(){
         
         var hash = $('.site-nav').find('a.active').attr('href');
+        var nav = $('#navigation');
         
-        if(hash !== '#page-hero'){
-            $('header nav').addClass('inbody');
+        if(hash == '#home'){
+            nav.removeClass('inbody');
+            nav.addClass('container-fluid');
         }else{
-            $('header nav').removeClass('inbody');
+            nav.removeClass('container-fluid');
+            nav.addClass('inbody');
+            nav.prepend("<a class=\"navbar-brand d-none d-sm-inline-block\"><img src=\"Images/nutrividelogo_nodots.png\" alt=\"Nutrivide Logo\" style=\"width:200px\"></a>");
         }
     });
 

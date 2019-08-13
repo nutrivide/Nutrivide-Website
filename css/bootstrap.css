@@ -4599,7 +4599,14 @@ input[type="button"].btn-block {
 }
 
 .inbody{
-    
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -ms-flex-align: center;
+    align-items: center;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
 }
 
 .navbar > .container,
@@ -4611,7 +4618,7 @@ input[type="button"].btn-block {
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .navbar-brand {
