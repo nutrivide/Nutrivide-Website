@@ -2,7 +2,35 @@ jQuery(document).ready(function ($) {
 
     var topoffset = 55; //variable for menu height
 
-    //Use smooth scrolling when clicking on navigation
+    $(window).on('activate.bs.scrollspy', function () {
+
+        var hash = $('.site-nav').find('a.active').attr('href');
+        var nav = $('#navigation');
+        var tracker = true;
+
+        if (hash == '#home') {
+            $('.navbar-brand')
+                .remove();
+            nav.css("justify-content", "space-around");
+        } else {
+            if (nav.children().length === 1) {
+                nav.prepend('<a class="navbar-brand d-none d-sm-inline-block" id="nutrivide-logo"><img src="Images/nutrividelogo_nodots.png" alt="Nutrivide Logo" style="width:200px"></a>');
+                nav.css("justify-content", "space-between");
+            }
+        }
+
+        // Animate Media Layout when it passes scroll
+        $('#layout-media .animated-group').css(
+            'visibility: hidden;'
+        );
+
+        if (hash == '#nutrifier') {
+            $('#nutrifier').find('video').prop('muted',true)[0].play();
+            
+        }
+    });
+    
+        //Use smooth scrolling when clicking on navigation
     $('.navbar-nav a').click(function () {
         if (location.pathname.replace(/^\//, '') ===
             this.pathname.replace(/^\//, '') &&
@@ -18,46 +46,26 @@ jQuery(document).ready(function ($) {
         } //click function
     }); //smooth scrolling
 
-    $(window).on('activate.bs.scrollspy', function () {
-
-        var hash = $('.site-nav').find('a.active').attr('href');
-        var nav = $('#navigation');
-        var tracker = true;
-
-        if (hash == '#home') {
-            $('.navbar-brand')
-            .remove();
-            nav.css("justify-content", "space-around");
-        } else {
-            if(nav.children().length === 1){
-                nav.prepend('<a class="navbar-brand d-none d-sm-inline-block" id="nutrivide-logo"><img src="Images/nutrividelogo_nodots.png" alt="Nutrivide Logo" style="width:200px"></a>');
-                console.log(nav.find('.navbar-brand').html());
-                nav.css("justify-content", "space-between");
-            }
-        }
-        console.log(tracker);
-    });
-    
     // Modifies modal and injects high resolution image and other data
-  $('#site-modal').on('show.bs.modal', function(event) {
-    $(this)
-      .find('.rounded')
-      .attr('src', $(event.relatedTarget).data('altimage'));
-      
-      $(this)
-      .find('.modal-content h4')
-      .text($(event.relatedTarget).data('name'));
-      
-      $(this)
-      .find('.modal-content p')
-      .text($(event.relatedTarget).data('description'));
-      
-      $(this)
-      .find('.modal-content a')
-      .attr('href', $(event.relatedTarget).data('sociallink'))
-      .find('img')
-      .attr('src', $(event.relatedTarget).data('social'));
-  });
+    $('#site-modal').on('show.bs.modal', function (event) {
+        $(this)
+            .find('.rounded')
+            .attr('src', $(event.relatedTarget).data('altimage'));
+
+        $(this)
+            .find('.modal-content h4')
+            .text($(event.relatedTarget).data('name'));
+
+        $(this)
+            .find('.modal-content p')
+            .text($(event.relatedTarget).data('description'));
+
+        $(this)
+            .find('.modal-content a')
+            .attr('href', $(event.relatedTarget).data('sociallink'))
+            .find('img')
+            .attr('src', $(event.relatedTarget).data('social'));
+    });
 
 
     var timelines = $('.cd-horizontal-timeline'),
