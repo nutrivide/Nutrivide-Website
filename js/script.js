@@ -37,6 +37,27 @@ jQuery(document).ready(function ($) {
         }
         console.log(tracker);
     });
+    
+    // Modifies modal and injects high resolution image and other data
+  $('#site-modal').on('show.bs.modal', function(event) {
+    $(this)
+      .find('.rounded')
+      .attr('src', $(event.relatedTarget).data('altimage'));
+      
+      $(this)
+      .find('.modal-content h4')
+      .text($(event.relatedTarget).data('name'));
+      
+      $(this)
+      .find('.modal-content p')
+      .text($(event.relatedTarget).data('description'));
+      
+      $(this)
+      .find('.modal-content a')
+      .attr('href', $(event.relatedTarget).data('sociallink'))
+      .find('img')
+      .attr('src', $(event.relatedTarget).data('social'));
+  });
 
 
     var timelines = $('.cd-horizontal-timeline'),
