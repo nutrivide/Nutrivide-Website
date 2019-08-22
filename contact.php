@@ -16,7 +16,7 @@
     $content = new SendGrid\Content("text/plain", $message);
     $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
-    $apiKey = 'SENDGRID_API_KEY';
+    $apiKey = getenv('SENDGRIP_API_KEY');
     $sg = new \SendGrid($apiKey);
 
     $response = $sg->client->mail()->send()->post($mail);
