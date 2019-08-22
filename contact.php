@@ -21,7 +21,7 @@
 
 try{
     $response = $sg->client->mail()->send()->post($mail);
-    redirect_to("https://www.facebook.com/Nutrivide/");
+    header("Location: http://www.facebook.com/nutrivide"); 
 }
 
 catch (Exception $e) {
