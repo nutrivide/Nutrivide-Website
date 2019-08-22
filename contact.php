@@ -9,6 +9,12 @@
     $from = 'Demo Contact Form'; 
     $to = 'advil64@gmail.com'; 
 
+    function clean_string($string) {
+      $bad = array("content-type","bcc:","to:","cc:","href");
+      return str_replace($bad,"",$string);
+    }
+
+    $email_message = "Form details below.\n\n";
     $email_message .= "First Name: ".clean_string($firstname)."\n";
     $email_message .= "Last Name: ".clean_string($lastname)."\n";
     $email_message .= "Email: ".clean_string($email)."\n";
