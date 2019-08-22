@@ -1,5 +1,7 @@
 <?php
 
+    require("sendgrid-php/sendgrid-php.php");
+
     $firstname = $_POST['firstname'] ?? '';
     $lastname = $_POST['lastname'] ?? '';
     $email = $_POST['email'] ?? '';
@@ -9,21 +11,17 @@
     $from = 'Demo Contact Form'; 
     $to = 'advil64@gmail.com'; 
 
-    function clean_string($string) {
-      $bad = array("content-type","bcc:","to:","cc:","href");
-      return str_replace($bad,"",$string);
-    }
+    $from = new SendGrid\Email(null, $email);
+    $to = new SendGrid\Email(null, $to);
+    $content = new SendGrid\Content("text/plain", $message);
+    $mail = new SendGrid\Mail($from, $subject, $to, $content);
 
-    $email_message = "Form details below.\n\n";
-    $email_message .= "First Name: ".clean_string($firstname)."\n";
-    $email_message .= "Last Name: ".clean_string($lastname)."\n";
-    $email_message .= "Email: ".clean_string($email)."\n";
-    $email_message .= "Comments: ".clean_string($message)."\n";
+    $apiKey = getenv('SENDGRID_API_KEY');
+    $sg = new \SendGrid($apiKey);
 
-    // create email headers
-    $headers = 'From: '.$firstname.' '.$lastname."\r\n".
-    'Reply-To: '.$email."\r\n" .
-    'X-Mailer: PHP/' . phpversion();
-    @mail($to, $subject, $email_message, $headers);
+    $response = $sg->client->mail()->send()->post($mail);
+    echo $response->statusCode();
+    echo $response->headers();
+    echo $response->body();
 
 ?>
