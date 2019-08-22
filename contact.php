@@ -9,6 +9,15 @@
     $from = 'Demo Contact Form'; 
     $to = 'advil64@gmail.com'; 
 
-    echo $firstname;
+    $email_message .= "First Name: ".clean_string($firstname)."\n";
+    $email_message .= "Last Name: ".clean_string($lastname)."\n";
+    $email_message .= "Email: ".clean_string($email)."\n";
+    $email_message .= "Comments: ".clean_string($message)."\n";
+
+    // create email headers
+    $headers = 'From: '.$firstname.' '.$lastname."\r\n".
+    'Reply-To: '.$email."\r\n" .
+    'X-Mailer: PHP/' . phpversion();
+    @mail($to, $subject, $email_message, $headers);
 
 ?>
