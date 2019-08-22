@@ -19,9 +19,13 @@
     $apiKey = getenv('SENDGRIP_API_KEY');
     $sg = new \SendGrid($apiKey);
 
+try{
     $response = $sg->client->mail()->send()->post($mail);
-    echo $response->statusCode();
-    echo $response->headers();
-    echo $response->body();
+    redirect_to("https://www.facebook.com/Nutrivide/");
+}
+
+catch (Exception $e) {
+    echo 'Caught exception: '.  $e->getMessage(). "\n";
+}
 
 ?>
