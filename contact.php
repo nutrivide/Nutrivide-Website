@@ -17,7 +17,8 @@
     $email->addTo($to, "Example User");
     $email->addContent("text/plain", $emailsopt);
 
-    $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
+    $apiKey = getenv('SENDGRIP_API_KEY');
+    $sendgrid = new \SendGrid($apiKey);
 
 try{
      $response = $sendgrid->send($email);
