@@ -9,7 +9,7 @@
     $message = $_POST['message'] ?? '';
     $emailsopt = $_POST['emailsopt'] ?? 0;
     $from = 'Demo Contact Form'; 
-    $to = 'advil64@gmail.com'; 
+    $to = 'akshaykamath96@gmail.com'; 
 
     $email = new \SendGrid\Mail\Mail(); 
     $email->setFrom($emailfrom, $firstname . ' ' . $lastname);
@@ -22,10 +22,10 @@
 
 try{
      $response = $sendgrid->send($email);
-    print $response->statusCode() . "\n";
-    print_r($response->headers());
-    print $response->body() . "\n";
-//    header("Location: http://www.facebook.com/nutrivide"); 
+//    print $response->statusCode() . "\n";
+//    print_r($response->headers());
+//    print $response->body() . "\n";
+    header("Location: http://www.facebook.com/nutrivide"); 
 }
 
 catch (Exception $e) {
