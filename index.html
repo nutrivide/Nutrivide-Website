@@ -251,35 +251,60 @@
 
 
     <div class="section bg-primary pt-3 pb-3" id="theteam">
-        <div class="container">
-            <h2 class="text-center text-primary pb-3 display-4 pt-4 text-center" id="theteam">Meet The Team</h2>
-            <h5 class="text-secondary">C Suite</h5>
-            <div class="row">
-                <div class="col rounded photo-modal">
-                    <a data-toggle="modal" data-target="#site-modal" href="#" data-altimage="Images/Akshay.JPG" data-name="Meet Akshay!" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." data-sociallink="https://www.linkedin.com/" data-social="Images/buttons/linkedin.svg">
-                        <img src="Images/Akshay.JPG" class="center-block img-fluid">
-                    </a>
-                    <h3 class="text-center">Akshay Kamath</h3>
-                    <p class="text-center">Chief Executive Officer</p>
-                </div>
+        <div class="row">
 
-                <div class="col rounded photo-modal">
-                    <a data-toggle="modal" data-target="#site-modal" href="#" data-altimage="Images/Yash.jpg" data-name="Meet Yash!" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." data-sociallink="https://www.linkedin.com/" data-social="Images/buttons/linkedin.svg">
-                        <img src="Images/Yash.jpg" class="center-block img-fluid">
-                    </a>
-                    <h3 class="text-center">Yash Dave</h3>
-                    <p class="text-center">Chief Science Officer</p>
-                </div>
+            <div class="col flex-container bg-primary">
+                <h2 class="text-center text-primary pb-3 display-3 pt-4" id="theteam">Our Team</h2>
+            </div>
 
-                <div class="col rounded photo-modal">
-                    <a data-toggle="modal" data-target="#site-modal" href="#" data-altimage="Images/Joseph.JPG" data-name="Meet Joseph!" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." data-sociallink="https://www.linkedin.com/" data-social="Images/buttons/linkedin.svg">
-                        <img src="Images/Joseph.JPG" class="center-block img-fluid">
-                    </a>
-                    <h3 class="text-center">Joseph Bajor</h3>
-                    <p class="text-center">Chief Technology Officer</p>
-                </div>
+            <div class="col rounded photo-modal">
+                <a data-toggle="modal" data-target="#site-modal" href="#" data-altimage="Images/Akshay.JPG" data-name="Meet Akshay!" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." data-sociallink="https://www.linkedin.com/" data-social="Images/buttons/linkedin.svg">
+
+                    <div class="thumbnail text-center">
+                        <img src="Images/AkshayAlt.jpg" class="center-block cover">
+                        <div class="caption">
+                            <h2 class="text-white">Akshay Kamath</h2>
+                        </div>
+                        <div class="caption-secondary">
+                            <h3 class="text-white">CEO</h3>
+                        </div>
+                    </div>
+                </a>
 
             </div>
+
+            <div class="col rounded photo-modal">
+                <a data-toggle="modal" data-target="#site-modal" href="#" data-altimage="Images/Yash.jpg" data-name="Meet Yash!" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." data-sociallink="https://www.linkedin.com/" data-social="Images/buttons/linkedin.svg">
+                    <div class="thumbnail text-center">
+                        <img src="Images/YashAlt.jpg" class="center-block cover">
+                        <div class="caption">
+                            <h2 class="text-white">Yash Dave</h2>
+                        </div>
+                        <div class="caption-secondary">
+                            <h3 class="text-white">CSO</h3>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div class="col rounded photo-modal">
+                <a data-toggle="modal" data-target="#site-modal" href="#" data-altimage="Images/Joseph.JPG" data-name="Meet Joseph!" data-description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat." data-sociallink="https://www.linkedin.com/" data-social="Images/buttons/linkedin.svg">
+
+                   <div class="thumbnail text-center">
+                        <img src="Images/JosephAlt.jpg" class="center-block cover">
+                        <div class="caption">
+                            <h2 class="text-white">Joseph Bajor</h2>
+                        </div>
+                       <div class="caption-secondary">
+                            <h3 class="text-white">CTO</h3>
+                        </div>
+                    </div>
+
+                </a>
+            </div>
+
+        </div>
+        <div class="container">
             <h5 class="text-secondary pt-3">Cohort Program</h5>
             <div class="row">
                 <div class="col photo-modal">
@@ -343,7 +368,6 @@
 
 
 
-
     <div class="section bg-light row" id="contact">
         <div class="col container align-center pt-3 pb-3">
             <h1 class="text-center text-primary display-4 pt-4" id="contactus">Contact Us</h1>
@@ -351,76 +375,78 @@
 
                 <div class="messages"></div>
 
-                <div class="controls pl-3">
+                <div classs="container">
 
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_name">Firstname *</label>
-                                <input id="form_name" type="text" name="firstname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
-                                <div class="help-block with-errors"></div>
+                    <div class="controls pl-3">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="firstname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_lastname">Lastname *</label>
-                                <input id="form_lastname" type="text" name="lastname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_email">Email *</label>
-                                <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="form_need">Subject *</label>
-                                <select id="form_need" name="subject" class="form-control" required="required" data-error="Please specify the subject.">
-                                    <option value=""></option>
-                                    <option value="Potential Sponsor">Sponsor</option>
-                                    <option value="Comment/Suggestion">Comment/Suggestion</option>
-                                    <option value="Other">Other</option>
-                                </select>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <label for="form_message">Message</label>
-                                <textarea id="form_message" name="message" class="form-control" placeholder="Optional message for us" rows="4" data-error="Please, leave us a message."></textarea>
-                                <div class="help-block with-errors"></div>
-                            </div>
-                        </div>
-                        <div class="col-md-12">
-                            <div class="form-group">
-                                <div class="form-check">
-                                    <input name="emailsopt" type="hidden" value="0" />
-                                    <input name="emailsopt" class="form-check-input" type="checkbox" value="1" id="optionalemails" />
-                                    <label class="form-check-label" for="optionalemails">
-                                        I would like to recieve monthly emails
-                                    </label>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label>
+                                    <input id="form_lastname" type="text" name="lastname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-12">
-                            <input type="submit" class="btn btn-success btn-send" value="Send message">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Subject *</label>
+                                    <select id="form_need" name="subject" class="form-control" required="required" data-error="Please specify the subject.">
+                                        <option value=""></option>
+                                        <option value="Potential Sponsor">Sponsor</option>
+                                        <option value="Comment/Suggestion">Comment/Suggestion</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-12">
-                            <p class="text-muted">
-                                <strong>*</strong> These fields are required.</p>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Optional message for us" rows="4" data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input name="emailsopt" type="hidden" value="0" />
+                                        <input name="emailsopt" class="form-check-input" type="checkbox" value="1" id="optionalemails" />
+                                        <label class="form-check-label" for="optionalemails">
+                                            I would like to recieve monthly emails
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted">
+                                    <strong>*</strong> These fields are required.</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-
             </form>
         </div>
         <div class="bg-light col container align-center pt-3 pb-3">

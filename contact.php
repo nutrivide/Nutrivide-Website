@@ -9,7 +9,7 @@
     $message = $_POST['message'] ?? '';
     $emailsopt = $_POST['emailsopt'] ?? 0;
     $from = 'Demo Contact Form'; 
-    $to = 'advil64@gmail.com'; 
+    $to = 'akshaykamath96@gmail.com'; 
 
     $from = new SendGrid\Email(null, $email);
     $to = new SendGrid\Email(null, $to);
