@@ -4,23 +4,23 @@
 
     $firstname = $_POST['firstname'] ?? '';
     $lastname = $_POST['lastname'] ?? '';
-    $email = $_POST['email'] ?? '';
+    $emailfrom = $_POST['email'] ?? '';
     $subject = $_POST['subject'] ?? '';
     $message = $_POST['message'] ?? '';
     $emailsopt = $_POST['emailsopt'] ?? 0;
     $from = 'Demo Contact Form'; 
     $to = 'advil64@gmail.com'; 
 
-    $from = new SendGrid\Email(null, $email);
-    $to = new SendGrid\Email(null, $to);
-    $content = new SendGrid\Content("text/plain", $message);
-    $mail = new SendGrid\Mail($from, $subject, $to, $content);
+    $email = new \SendGrid\Mail\Mail(); 
+    $email->setFrom($emailfrom, $firstname . ' ' . $lastname);
+    $email->setSubject($subject);
+    $email->addTo($to, "Example User");
+    $email->addContent("text/plain", $emailsopt);
 
-    $apiKey = getenv('SENDGRIP_API_KEY');
-    $sg = new \SendGrid($apiKey);
+    $sendgrid = new \SendGrid(getenv('SENDGRID_API_KEY'));
 
 try{
-    $response = $sg->client->mail()->send()->post($mail);
+     $response = $sendgrid->send($email);
     header("Location: http://www.facebook.com/nutrivide"); 
 }
 
