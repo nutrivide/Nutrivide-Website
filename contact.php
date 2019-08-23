@@ -1,6 +1,6 @@
 <?php
 
-    require("sendgrid-php/sendgrid-php.php");
+    require 'vendor/autoload.php';
 
     $firstname = $_POST['firstname'] ?? '';
     $lastname = $_POST['lastname'] ?? '';
@@ -9,7 +9,7 @@
     $message = $_POST['message'] ?? '';
     $emailsopt = $_POST['emailsopt'] ?? 0;
     $from = 'Demo Contact Form'; 
-    $to = 'akshaykamath96@gmail.com'; 
+    $to = 'advil64@gmail.com'; 
 
     $from = new SendGrid\Email(null, $email);
     $to = new SendGrid\Email(null, $to);
