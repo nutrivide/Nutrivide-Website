@@ -21,7 +21,10 @@
 
 try{
      $response = $sendgrid->send($email);
-    header("Location: http://www.facebook.com/nutrivide"); 
+    print $response->statusCode() . "\n";
+    print_r($response->headers());
+    print $response->body() . "\n";
+//    header("Location: http://www.facebook.com/nutrivide"); 
 }
 
 catch (Exception $e) {
