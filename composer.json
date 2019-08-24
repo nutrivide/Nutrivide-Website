@@ -1,5 +1,6 @@
 {
     "require": {
-        "sendgrid/sendgrid": "^7.3"
+        "sendgrid/sendgrid": "^7.3",
+        "mobiledetect/mobiledetectlib": "^2.8"
     }
 }
