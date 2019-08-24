@@ -1,14 +1,14 @@
 <?php 
 
-require_once 'Mobile_Detect.php';
+require 'vendor/autoload.php';
 $detect = new Mobile_Detect;
 
 if ( $detect->isMobile() ) {
-    include_once("index.html");
+    include_once("index_mobile.html");
 }
 
 else{
-    include_once("index_mobile.html");
+    include_once("index.html");
 }
 
  ?>
