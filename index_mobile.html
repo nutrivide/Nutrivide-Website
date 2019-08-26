@@ -1,5 +1,144 @@
 <html>
 
-<p>mobile version still in progress</p>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+
+    <title>Nutrivide</title>
+    <link rel="icon" href="Images/favicon.ico">
+</head>
+
+<body data-spy="scroll" data-target=".site-nav" data-offset="55">
+    <header id="page-hero" class="site-header">
+        <div class="bg-primary" id="page-navbar">
+            <nav class="site-nav navbar fixed-top navbar-light navbar-expand-sm">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myTogglerNav" aria-controls="myTogglerNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="myTogglerNav">
+
+                    <div class="navbar-nav">
+                        <a class="nav-item nav-link" href="#home">Home</a>
+                        <a class="nav-item nav-link" href="#aboutus">About Us</a>
+                        <a class="nav-item nav-link" href="#nutrifier">The Nutrifier</a>
+                        <a class="nav-item nav-link" href="#timeline">Timeline</a>
+                        <a class="nav-item nav-link" href="#theteam">The Team</a>
+                        <a class="nav-item nav-link" href="#contact">Contact Us</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div id="home">
+            <section class="layout-hero jumbotron jumbotron-fluid d-flex align-items-center mt-5 bg-primary" id="home">
+                <div class="col text-center">
+                    <img src="Images/nutrividelogo.png" style="width: 80%;">
+                    <p class="display-5 lead text-success pt-3">let's keep our future healthy</p>
+                </div>
+            </section>
+        </div>
+    </header>
+
+    <div class="section bg-light row" id="contact">
+        <div class="col container align-center pt-3 pb-3">
+            <h1 class="text-center text-primary display-4 pt-4" id="contactus">Contact Us</h1>
+            <form action="contact.php" method="post">
+
+                <div class="messages"></div>
+
+                <div classs="container">
+
+                    <div class="controls pl-3 pr-3">
+
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_name">Firstname *</label>
+                                    <input id="form_name" type="text" name="firstname" class="form-control" placeholder="Please enter your firstname *" required="required" data-error="Firstname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_lastname">Lastname *</label>
+                                    <input id="form_lastname" type="text" name="lastname" class="form-control" placeholder="Please enter your lastname *" required="required" data-error="Lastname is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_email">Email *</label>
+                                    <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="form_need">Subject *</label>
+                                    <select id="form_need" name="subject" class="form-control" required="required" data-error="Please specify the subject.">
+                                        <option value=""></option>
+                                        <option value="Potential Sponsor">Sponsor</option>
+                                        <option value="Comment/Suggestion">Comment/Suggestion</option>
+                                        <option value="Other">Other</option>
+                                    </select>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="form_message">Message</label>
+                                    <textarea id="form_message" name="message" class="form-control" placeholder="Optional message for us" rows="4" data-error="Please, leave us a message."></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="form-check">
+                                        <input name="emailsopt" type="hidden" value="0" />
+                                        <input name="emailsopt" class="form-check-input" type="checkbox" value="1" id="optionalemails" />
+                                        <label class="form-check-label" for="optionalemails">
+                                            I would like to recieve monthly emails
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="submit" class="btn btn-success btn-send" value="Send message">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p class="text-muted">
+                                    <strong>*</strong> These fields are required.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+    <footer class="bg-primary">
+        <div class="container text-center text-primary">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <p>Copyright &copy; 2019 Nutrivide</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
 
 </html>
